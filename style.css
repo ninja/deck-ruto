@@ -1,0 +1,156 @@
+body {
+  align-items: center;
+  background-color: black;
+  bottom: 0;
+  color: white;
+  display: flex;
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  font-size: 5vw;
+  justify-content: center;
+  left: 0;
+  line-height: 5vw;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+p {
+  line-height: 7vw;
+  margin: 0;
+}
+
+.bespoke-parent {
+  min-height: 100vmin;
+  perspective: 4000;
+  position: relative;
+  width: 100vw;
+}
+
+.bespoke-slide {
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: rgb(0, 10, 10);;
+  border: .5vmin solid rgb(0, 255, 255);;
+  border-radius: 2vw;
+  bottom: .5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: .5vmin;
+  position: absolute;
+  right: .5vmin;
+  top: .5vmin;
+  transform-style: preserve-3d;
+  transition: all 2s;
+}
+
+.bespoke-active {
+}
+
+.bespoke-inactive {
+  opacity: 0;
+}
+
+.bespoke-before {
+  transform: rotateY(-180deg);
+}
+
+.bespoke-before-1 {}
+
+.bespoke-after {
+  transform: rotateY(180deg);
+}
+
+.bespoke-after-1 {}
+
+.hljs {
+  color: white;
+  display: block;
+  font-family: "Input Mono", "Menlo", monospace;
+  font-size: 2vw;
+  line-height: 3vw;
+}
+
+.hljs-tag,
+.hljs-subst {
+  color: orange;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: yellow;
+}
+
+.hljs-section,
+.hljs-selector-class {
+  color: cyan;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: orange;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: cyan;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: white;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: cyan;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: gray;
+}
+
+.hljs-function .hljs-keyword {
+  color: yellow;
+}
+
+.hljs-function .hljs-title {
+  color: cyan;
+}
+
+.hljs-function .hljs-params {
+  color: orange;
+}
+
+.hljs-tag .hljs-title,
+.hljs-tag .hljs-attribute {
+  color: white;
+}
+
+.hljs-tag .hljs-value {
+  color: cyan;
+}
